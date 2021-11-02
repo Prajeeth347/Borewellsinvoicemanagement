@@ -169,7 +169,7 @@ class feetscustomercasingbill extends StatelessWidget {
                 decoration: InputDecoration(labelText: "1501-1600 Feet"),
                 keyboardType: TextInputType.number,
               ),
-              ElevatedButton(
+              FloatingActionButton.extended(
                   onPressed: () {
                     if (huncontroller.text.isNotEmpty) {
                       firstpage.zeroto100 = int.parse(huncontroller.text);
@@ -228,7 +228,7 @@ class feetscustomercasingbill extends StatelessWidget {
                             builder: (context) =>
                                 viewbillcustomerdetailscasing()));
                   },
-                  child: Text('Edit'))
+                  label: Text('Edit'))
             ],
           ),
         )),

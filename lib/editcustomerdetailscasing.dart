@@ -1,10 +1,8 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/navigation_toolbar.dart';
-import 'package:sanjay/default_prices.dart';
 import 'package:sanjay/main.dart';
 import 'package:sanjay/viewbill.dart';
-import 'package:sanjay/viewbillcustomerdetails.dart';
 import 'package:sanjay/viewbillcustomerdetailscasing.dart';
 
 class editcustomerdetailscasing extends StatelessWidget {
@@ -38,7 +36,7 @@ class editcustomerdetailscasing extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.symmetric(vertical: 20),
-            child: ElevatedButton(
+            child: FloatingActionButton.extended(
               onPressed: () {
                 customerNumber = numberController.text;
                 customerName = nameController.text;
@@ -47,7 +45,7 @@ class editcustomerdetailscasing extends StatelessWidget {
                     MaterialPageRoute(
                         builder: (context) => viewbillcustomerdetailscasing()));
               },
-              child: Text('Done'),
+              label: Text('Done'),
             ),
           )
         ],

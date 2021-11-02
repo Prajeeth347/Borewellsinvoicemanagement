@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/navigation_toolbar.dart';
 import 'package:intl/intl.dart';
 import 'package:sanjay/Casing.dart';
-import 'package:sanjay/default_prices.dart';
-import 'package:sanjay/default_prices.dart';
 import 'package:sanjay/viewbill.dart';
 
 void main() {
@@ -223,7 +221,7 @@ class firstpage extends StatelessWidget {
                 decoration: InputDecoration(labelText: "Price per feet"),
                 keyboardType: TextInputType.number,
               ),
-              ElevatedButton(
+              FloatingActionButton.extended(
                   onPressed: () {
                     if (huncontroller.text.isNotEmpty) {
                       zeroto100 = int.parse(huncontroller.text);
@@ -283,8 +281,8 @@ class firstpage extends StatelessWidget {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => casing()));
                   },
-                  child: Text('Add Casing')),
-              ElevatedButton(
+                  label: Text('Add Casing')),
+              FloatingActionButton.extended(
                   onPressed: () {
                     if (huncontroller.text.isNotEmpty) {
                       zeroto100 = int.parse(huncontroller.text);
@@ -337,7 +335,7 @@ class firstpage extends StatelessWidget {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => viewbill()));
                   },
-                  child: Text('Skip Casing & View Bill'))
+                  label: Text('Skip Casing & View Bill'))
             ],
           ),
         )),

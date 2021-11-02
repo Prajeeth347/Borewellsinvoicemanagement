@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/navigation_toolbar.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:sanjay/Casing.dart';
-import 'package:sanjay/editcustomerdetails.dart';
 import 'package:sanjay/feetsmainbill.dart';
 import 'package:sanjay/main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -295,29 +294,21 @@ class viewbill extends StatelessWidget {
                 '\nTotal : ' + "${totalwithout + 4000}",
                 style: TextStyle(fontSize: 18, color: Colors.red),
               ),
-              ElevatedButton(
+              FloatingActionButton.extended(
                   onPressed: () {
                     Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
                             builder: (context) => feetsmainbill()));
                   },
-                  child: Text('Edit Feet prices')),
-              ElevatedButton(
+                  label: Text('Edit Feet prices')),
+              FloatingActionButton.extended(
                   onPressed: () {
                     Navigator.pushReplacement(context,
                         MaterialPageRoute(builder: (context) => casing()));
                   },
-                  child: Text('Add Casing')),
-              ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => editcustomerdetails()));
-                  },
-                  child: Text('Add Customer Details')),
-              ElevatedButton(
+                  label: Text('Add Casing')),
+              FloatingActionButton.extended(
                   onPressed: () {
                     Fluttertoast.showToast(
                         msg: 'Please Add casing to generate pdf',
@@ -325,11 +316,9 @@ class viewbill extends StatelessWidget {
                         textColor: Colors.black,
                         gravity: ToastGravity.BOTTOM);
                   },
-                  child: Text('Save and Open')),
-              ElevatedButton(
+                  label: Text('Save and Open')),
+              FloatingActionButton.extended(
                   onPressed: () {
-                    editcustomerdetails.customerName = '';
-                    editcustomerdetails.customerNumber = '';
                     firstpage.zeroto100 = 0;
                     firstpage.oneto200 = 0;
                     firstpage.twoto300 = 0;
@@ -349,7 +338,7 @@ class viewbill extends StatelessWidget {
                     Navigator.pushReplacement(context,
                         MaterialPageRoute(builder: (context) => firstpage()));
                   },
-                  child: Text('New Bill')),
+                  label: Text('New Bill')),
             ],
           ),
         )));

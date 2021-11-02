@@ -113,7 +113,7 @@ class _casingState extends State<casing> {
                   keyboardType: TextInputType.number,
                 ),
               ),
-              ElevatedButton(
+              FloatingActionButton.extended(
                   onPressed: () {
                     if (casingcontroller.text.isNotEmpty) {
                       casing.casingprice = int.parse(casingfeetcontroller.text);
@@ -124,7 +124,7 @@ class _casingState extends State<casing> {
                               builder: (context) => viewbillcasing()));
                     }
                   },
-                  child: Text('View bill'))
+                  label: Text('View bill'))
             ],
           ),
         ));

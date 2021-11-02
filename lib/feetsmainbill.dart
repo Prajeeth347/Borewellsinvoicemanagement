@@ -180,7 +180,7 @@ class feetsmainbill extends StatelessWidget {
                 decoration: InputDecoration(labelText: "Price per feet"),
                 keyboardType: TextInputType.number,
               ),
-              ElevatedButton(
+              FloatingActionButton.extended(
                   onPressed: () {
                     if (huncontroller.text.isNotEmpty) {
                       firstpage.zeroto100 = int.parse(huncontroller.text);
@@ -244,7 +244,7 @@ class feetsmainbill extends StatelessWidget {
                     Navigator.pushReplacement(context,
                         MaterialPageRoute(builder: (context) => viewbill()));
                   },
-                  child: Text('Edit'))
+                  label: Text('Edit'))
             ],
           ),
         )),
