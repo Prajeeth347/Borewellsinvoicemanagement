@@ -113,6 +113,9 @@ class _casingState extends State<casing> {
                   keyboardType: TextInputType.number,
                 ),
               ),
+              SizedBox(
+                height: 16,
+              ),
               FloatingActionButton.extended(
                   onPressed: () {
                     if (casingcontroller.text.isNotEmpty) {

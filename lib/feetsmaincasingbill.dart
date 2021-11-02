@@ -169,65 +169,70 @@ class feetsmaincasingbill extends StatelessWidget {
                 decoration: InputDecoration(labelText: "1501-1600 Feet"),
                 keyboardType: TextInputType.number,
               ),
-              ElevatedButton(
-                  onPressed: () {
-                    if (huncontroller.text.isNotEmpty) {
-                      firstpage.zeroto100 = int.parse(huncontroller.text);
-                    }
-                    if (twocontroller.text.isNotEmpty) {
-                      firstpage.oneto200 = int.parse(twocontroller.text);
-                    }
-                    if (threecontroller.text.isNotEmpty) {
-                      firstpage.twoto300 = int.parse(threecontroller.text);
-                    }
-                    if (fourcontroller.text.isNotEmpty) {
-                      firstpage.threeto400 = int.parse(fourcontroller.text);
-                    }
-                    if (fivecontroller.text.isNotEmpty) {
-                      firstpage.fourto500 = int.parse(fivecontroller.text);
-                    }
-                    if (sixcontroller.text.isNotEmpty) {
-                      firstpage.fiveto600 = int.parse(sixcontroller.text);
-                    }
-                    if (sevencontroller.text.isNotEmpty) {
-                      firstpage.sixto700 = int.parse(sevencontroller.text);
-                    }
-                    if (eightcontroller.text.isNotEmpty) {
-                      firstpage.sevento800 = int.parse(eightcontroller.text);
-                    }
-                    if (ninecontroller.text.isNotEmpty) {
-                      firstpage.eightto900 = int.parse(ninecontroller.text);
-                    }
-                    if (tencontroller.text.isNotEmpty) {
-                      firstpage.nineto1000 = int.parse(tencontroller.text);
-                    }
-                    if (elevencontroller.text.isNotEmpty) {
-                      firstpage.tento1100 = int.parse(elevencontroller.text);
-                    }
-                    if (twelvecontroller.text.isNotEmpty) {
-                      firstpage.elevento1200 = int.parse(twelvecontroller.text);
-                    }
-                    if (thirteencontroller.text.isNotEmpty) {
-                      firstpage.twelveto1300 = int.parse(twelvecontroller.text);
-                    }
-                    if (fourteencontroller.text.isNotEmpty) {
-                      firstpage.thirteento1400 =
-                          int.parse(fourteencontroller.text);
-                    }
-                    if (fifteencontroller.text.isNotEmpty) {
-                      firstpage.fourteento1500 =
-                          int.parse(fifteencontroller.text);
-                    }
-                    if (sixteencontroller.text.isNotEmpty) {
-                      firstpage.fifteento1600 =
-                          int.parse(sixteencontroller.text);
-                    }
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => viewbillcasing()));
-                  },
-                  child: Text('Edit'))
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FloatingActionButton.extended(
+                    onPressed: () {
+                      if (huncontroller.text.isNotEmpty) {
+                        firstpage.zeroto100 = int.parse(huncontroller.text);
+                      }
+                      if (twocontroller.text.isNotEmpty) {
+                        firstpage.oneto200 = int.parse(twocontroller.text);
+                      }
+                      if (threecontroller.text.isNotEmpty) {
+                        firstpage.twoto300 = int.parse(threecontroller.text);
+                      }
+                      if (fourcontroller.text.isNotEmpty) {
+                        firstpage.threeto400 = int.parse(fourcontroller.text);
+                      }
+                      if (fivecontroller.text.isNotEmpty) {
+                        firstpage.fourto500 = int.parse(fivecontroller.text);
+                      }
+                      if (sixcontroller.text.isNotEmpty) {
+                        firstpage.fiveto600 = int.parse(sixcontroller.text);
+                      }
+                      if (sevencontroller.text.isNotEmpty) {
+                        firstpage.sixto700 = int.parse(sevencontroller.text);
+                      }
+                      if (eightcontroller.text.isNotEmpty) {
+                        firstpage.sevento800 = int.parse(eightcontroller.text);
+                      }
+                      if (ninecontroller.text.isNotEmpty) {
+                        firstpage.eightto900 = int.parse(ninecontroller.text);
+                      }
+                      if (tencontroller.text.isNotEmpty) {
+                        firstpage.nineto1000 = int.parse(tencontroller.text);
+                      }
+                      if (elevencontroller.text.isNotEmpty) {
+                        firstpage.tento1100 = int.parse(elevencontroller.text);
+                      }
+                      if (twelvecontroller.text.isNotEmpty) {
+                        firstpage.elevento1200 =
+                            int.parse(twelvecontroller.text);
+                      }
+                      if (thirteencontroller.text.isNotEmpty) {
+                        firstpage.twelveto1300 =
+                            int.parse(twelvecontroller.text);
+                      }
+                      if (fourteencontroller.text.isNotEmpty) {
+                        firstpage.thirteento1400 =
+                            int.parse(fourteencontroller.text);
+                      }
+                      if (fifteencontroller.text.isNotEmpty) {
+                        firstpage.fourteento1500 =
+                            int.parse(fifteencontroller.text);
+                      }
+                      if (sixteencontroller.text.isNotEmpty) {
+                        firstpage.fifteento1600 =
+                            int.parse(sixteencontroller.text);
+                      }
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => viewbillcasing()));
+                    },
+                    label: Text('Edit')),
+              )
             ],
           ),
         )),

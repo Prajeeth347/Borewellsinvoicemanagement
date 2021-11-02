@@ -294,51 +294,63 @@ class viewbill extends StatelessWidget {
                 '\nTotal : ' + "${totalwithout + 4000}",
                 style: TextStyle(fontSize: 18, color: Colors.red),
               ),
-              FloatingActionButton.extended(
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => feetsmainbill()));
-                  },
-                  label: Text('Edit Feet prices')),
-              FloatingActionButton.extended(
-                  onPressed: () {
-                    Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => casing()));
-                  },
-                  label: Text('Add Casing')),
-              FloatingActionButton.extended(
-                  onPressed: () {
-                    Fluttertoast.showToast(
-                        msg: 'Please Add casing to generate pdf',
-                        backgroundColor: Colors.white,
-                        textColor: Colors.black,
-                        gravity: ToastGravity.BOTTOM);
-                  },
-                  label: Text('Save and Open')),
-              FloatingActionButton.extended(
-                  onPressed: () {
-                    firstpage.zeroto100 = 0;
-                    firstpage.oneto200 = 0;
-                    firstpage.twoto300 = 0;
-                    firstpage.threeto400 = 0;
-                    firstpage.fourto500 = 0;
-                    firstpage.fiveto600 = 0;
-                    firstpage.sixto700 = 0;
-                    firstpage.sevento800 = 0;
-                    firstpage.eightto900 = 0;
-                    firstpage.nineto1000 = 0;
-                    firstpage.tento1100 = 0;
-                    firstpage.elevento1200 = 0;
-                    firstpage.twelveto1300 = 0;
-                    firstpage.thirteento1400 = 0;
-                    firstpage.fourteento1500 = 0;
-                    firstpage.fifteento1600 = 0;
-                    Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => firstpage()));
-                  },
-                  label: Text('New Bill')),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FloatingActionButton.extended(
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => feetsmainbill()));
+                    },
+                    label: Text('Edit Feet prices')),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FloatingActionButton.extended(
+                    onPressed: () {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) => casing()));
+                    },
+                    label: Text('Add Casing')),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FloatingActionButton.extended(
+                    onPressed: () {
+                      Fluttertoast.showToast(
+                          msg: 'Please Add casing to generate pdf',
+                          backgroundColor: Colors.white,
+                          textColor: Colors.black,
+                          gravity: ToastGravity.BOTTOM);
+                    },
+                    label: Text('Save and Open')),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FloatingActionButton.extended(
+                    onPressed: () {
+                      firstpage.zeroto100 = 0;
+                      firstpage.oneto200 = 0;
+                      firstpage.twoto300 = 0;
+                      firstpage.threeto400 = 0;
+                      firstpage.fourto500 = 0;
+                      firstpage.fiveto600 = 0;
+                      firstpage.sixto700 = 0;
+                      firstpage.sevento800 = 0;
+                      firstpage.eightto900 = 0;
+                      firstpage.nineto1000 = 0;
+                      firstpage.tento1100 = 0;
+                      firstpage.elevento1200 = 0;
+                      firstpage.twelveto1300 = 0;
+                      firstpage.thirteento1400 = 0;
+                      firstpage.fourteento1500 = 0;
+                      firstpage.fifteento1600 = 0;
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) => firstpage()));
+                    },
+                    label: Text('New Bill')),
+              ),
             ],
           ),
         )));

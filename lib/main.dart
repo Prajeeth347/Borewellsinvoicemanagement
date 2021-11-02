@@ -221,121 +221,127 @@ class firstpage extends StatelessWidget {
                 decoration: InputDecoration(labelText: "Price per feet"),
                 keyboardType: TextInputType.number,
               ),
-              FloatingActionButton.extended(
-                  onPressed: () {
-                    if (huncontroller.text.isNotEmpty) {
-                      zeroto100 = int.parse(huncontroller.text);
-                    }
-                    if (twocontroller.text.isNotEmpty) {
-                      oneto200 = int.parse(twocontroller.text);
-                    }
-                    if (threecontroller.text.isNotEmpty) {
-                      twoto300 = int.parse(threecontroller.text);
-                    }
-                    if (fourcontroller.text.isNotEmpty) {
-                      threeto400 = int.parse(fourcontroller.text);
-                    }
-                    if (fivecontroller.text.isNotEmpty) {
-                      fourto500 = int.parse(fivecontroller.text);
-                    }
-                    if (sixcontroller.text.isNotEmpty) {
-                      fiveto600 = int.parse(sixcontroller.text);
-                    }
-                    if (sevencontroller.text.isNotEmpty) {
-                      sixto700 = int.parse(sevencontroller.text);
-                    }
-                    if (eightcontroller.text.isNotEmpty) {
-                      sevento800 = int.parse(eightcontroller.text);
-                    }
-                    if (ninecontroller.text.isNotEmpty) {
-                      eightto900 = int.parse(ninecontroller.text);
-                    }
-                    if (tencontroller.text.isNotEmpty) {
-                      nineto1000 = int.parse(tencontroller.text);
-                    }
-                    if (elevencontroller.text.isNotEmpty) {
-                      tento1100 = int.parse(elevencontroller.text);
-                    }
-                    if (twelvecontroller.text.isNotEmpty) {
-                      elevento1200 = int.parse(twelvecontroller.text);
-                    }
-                    if (thirteencontroller.text.isNotEmpty) {
-                      twelveto1300 = int.parse(twelvecontroller.text);
-                    }
-                    if (fourteencontroller.text.isNotEmpty) {
-                      thirteento1400 = int.parse(fourteencontroller.text);
-                    }
-                    if (fifteencontroller.text.isNotEmpty) {
-                      fourteento1500 = int.parse(fifteencontroller.text);
-                    }
-                    if (sixteencontroller.text.isNotEmpty) {
-                      fifteento1600 = int.parse(sixteencontroller.text);
-                    }
-                    if (extrafeetscontroller.text.isNotEmpty) {
-                      extrafeets = int.parse(extrafeetscontroller.text);
-                      if (extrafeetspricecontroller.text.isNotEmpty) {
-                        extrafeetsprice =
-                            int.parse(extrafeetspricecontroller.text);
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FloatingActionButton.extended(
+                    onPressed: () {
+                      if (huncontroller.text.isNotEmpty) {
+                        zeroto100 = int.parse(huncontroller.text);
                       }
-                    }
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => casing()));
-                  },
-                  label: Text('Add Casing')),
-              FloatingActionButton.extended(
-                  onPressed: () {
-                    if (huncontroller.text.isNotEmpty) {
-                      zeroto100 = int.parse(huncontroller.text);
-                    }
-                    if (twocontroller.text.isNotEmpty) {
-                      oneto200 = int.parse(twocontroller.text);
-                    }
-                    if (threecontroller.text.isNotEmpty) {
-                      twoto300 = int.parse(threecontroller.text);
-                    }
-                    if (fourcontroller.text.isNotEmpty) {
-                      threeto400 = int.parse(fourcontroller.text);
-                    }
-                    if (fivecontroller.text.isNotEmpty) {
-                      fourto500 = int.parse(fivecontroller.text);
-                    }
-                    if (sixcontroller.text.isNotEmpty) {
-                      fiveto600 = int.parse(sixcontroller.text);
-                    }
-                    if (sevencontroller.text.isNotEmpty) {
-                      sixto700 = int.parse(sevencontroller.text);
-                    }
-                    if (eightcontroller.text.isNotEmpty) {
-                      sevento800 = int.parse(eightcontroller.text);
-                    }
-                    if (ninecontroller.text.isNotEmpty) {
-                      eightto900 = int.parse(ninecontroller.text);
-                    }
-                    if (tencontroller.text.isNotEmpty) {
-                      nineto1000 = int.parse(tencontroller.text);
-                    }
-                    if (elevencontroller.text.isNotEmpty) {
-                      tento1100 = int.parse(elevencontroller.text);
-                    }
-                    if (twelvecontroller.text.isNotEmpty) {
-                      elevento1200 = int.parse(twelvecontroller.text);
-                    }
-                    if (thirteencontroller.text.isNotEmpty) {
-                      twelveto1300 = int.parse(twelvecontroller.text);
-                    }
-                    if (fourteencontroller.text.isNotEmpty) {
-                      thirteento1400 = int.parse(fourteencontroller.text);
-                    }
-                    if (fifteencontroller.text.isNotEmpty) {
-                      fourteento1500 = int.parse(fifteencontroller.text);
-                    }
-                    if (sixteencontroller.text.isNotEmpty) {
-                      fifteento1600 = int.parse(sixteencontroller.text);
-                    }
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => viewbill()));
-                  },
-                  label: Text('Skip Casing & View Bill'))
+                      if (twocontroller.text.isNotEmpty) {
+                        oneto200 = int.parse(twocontroller.text);
+                      }
+                      if (threecontroller.text.isNotEmpty) {
+                        twoto300 = int.parse(threecontroller.text);
+                      }
+                      if (fourcontroller.text.isNotEmpty) {
+                        threeto400 = int.parse(fourcontroller.text);
+                      }
+                      if (fivecontroller.text.isNotEmpty) {
+                        fourto500 = int.parse(fivecontroller.text);
+                      }
+                      if (sixcontroller.text.isNotEmpty) {
+                        fiveto600 = int.parse(sixcontroller.text);
+                      }
+                      if (sevencontroller.text.isNotEmpty) {
+                        sixto700 = int.parse(sevencontroller.text);
+                      }
+                      if (eightcontroller.text.isNotEmpty) {
+                        sevento800 = int.parse(eightcontroller.text);
+                      }
+                      if (ninecontroller.text.isNotEmpty) {
+                        eightto900 = int.parse(ninecontroller.text);
+                      }
+                      if (tencontroller.text.isNotEmpty) {
+                        nineto1000 = int.parse(tencontroller.text);
+                      }
+                      if (elevencontroller.text.isNotEmpty) {
+                        tento1100 = int.parse(elevencontroller.text);
+                      }
+                      if (twelvecontroller.text.isNotEmpty) {
+                        elevento1200 = int.parse(twelvecontroller.text);
+                      }
+                      if (thirteencontroller.text.isNotEmpty) {
+                        twelveto1300 = int.parse(twelvecontroller.text);
+                      }
+                      if (fourteencontroller.text.isNotEmpty) {
+                        thirteento1400 = int.parse(fourteencontroller.text);
+                      }
+                      if (fifteencontroller.text.isNotEmpty) {
+                        fourteento1500 = int.parse(fifteencontroller.text);
+                      }
+                      if (sixteencontroller.text.isNotEmpty) {
+                        fifteento1600 = int.parse(sixteencontroller.text);
+                      }
+                      if (extrafeetscontroller.text.isNotEmpty) {
+                        extrafeets = int.parse(extrafeetscontroller.text);
+                        if (extrafeetspricecontroller.text.isNotEmpty) {
+                          extrafeetsprice =
+                              int.parse(extrafeetspricecontroller.text);
+                        }
+                      }
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => casing()));
+                    },
+                    label: Text('Add Casing')),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FloatingActionButton.extended(
+                    onPressed: () {
+                      if (huncontroller.text.isNotEmpty) {
+                        zeroto100 = int.parse(huncontroller.text);
+                      }
+                      if (twocontroller.text.isNotEmpty) {
+                        oneto200 = int.parse(twocontroller.text);
+                      }
+                      if (threecontroller.text.isNotEmpty) {
+                        twoto300 = int.parse(threecontroller.text);
+                      }
+                      if (fourcontroller.text.isNotEmpty) {
+                        threeto400 = int.parse(fourcontroller.text);
+                      }
+                      if (fivecontroller.text.isNotEmpty) {
+                        fourto500 = int.parse(fivecontroller.text);
+                      }
+                      if (sixcontroller.text.isNotEmpty) {
+                        fiveto600 = int.parse(sixcontroller.text);
+                      }
+                      if (sevencontroller.text.isNotEmpty) {
+                        sixto700 = int.parse(sevencontroller.text);
+                      }
+                      if (eightcontroller.text.isNotEmpty) {
+                        sevento800 = int.parse(eightcontroller.text);
+                      }
+                      if (ninecontroller.text.isNotEmpty) {
+                        eightto900 = int.parse(ninecontroller.text);
+                      }
+                      if (tencontroller.text.isNotEmpty) {
+                        nineto1000 = int.parse(tencontroller.text);
+                      }
+                      if (elevencontroller.text.isNotEmpty) {
+                        tento1100 = int.parse(elevencontroller.text);
+                      }
+                      if (twelvecontroller.text.isNotEmpty) {
+                        elevento1200 = int.parse(twelvecontroller.text);
+                      }
+                      if (thirteencontroller.text.isNotEmpty) {
+                        twelveto1300 = int.parse(twelvecontroller.text);
+                      }
+                      if (fourteencontroller.text.isNotEmpty) {
+                        thirteento1400 = int.parse(fourteencontroller.text);
+                      }
+                      if (fifteencontroller.text.isNotEmpty) {
+                        fourteento1500 = int.parse(fifteencontroller.text);
+                      }
+                      if (sixteencontroller.text.isNotEmpty) {
+                        fifteento1600 = int.parse(sixteencontroller.text);
+                      }
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => viewbill()));
+                    },
+                    label: Text('Skip Casing & View Bill')),
+              )
             ],
           ),
         )),

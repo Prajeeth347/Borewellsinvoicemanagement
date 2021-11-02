@@ -320,70 +320,87 @@ class viewbillcasing extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: FloatingActionButton.extended(
-                    onPressed: () {
-                      Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => feetsmaincasingbill()));
-                    },
-                    label: Text('Edit Feet prices')),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: FloatingActionButton.extended(
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => feetsmaincasingbill()));
+                      },
+                      label: Text('Edit Feet prices')),
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: FloatingActionButton.extended(
-                    onPressed: () {
-                      Navigator.pushReplacement(context,
-                          MaterialPageRoute(builder: (context) => casing()));
-                    },
-                    label: Text('Edit Casing details')),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: FloatingActionButton.extended(
+                      onPressed: () {
+                        Navigator.pushReplacement(context,
+                            MaterialPageRoute(builder: (context) => casing()));
+                      },
+                      label: Text('Edit Casing details')),
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: FloatingActionButton.extended(
-                    onPressed: () {
-                      Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  editcustomerdetailscasing()));
-                    },
-                    label: Text('Add Customer Details')),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: FloatingActionButton.extended(
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    editcustomerdetailscasing()));
+                      },
+                      label: Text('Add Customer Details')),
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: FloatingActionButton.extended(
-                    onPressed: () async {
-                      _generatebill();
-                    },
-                    label: Text('Save and Open Bill')),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: FloatingActionButton.extended(
+                      onPressed: () async {
+                        _generatebill();
+                      },
+                      label: Text('Save and Open Bill')),
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: FloatingActionButton.extended(
-                    onPressed: () {
-                      editcustomerdetailscasing.customerName = '';
-                      editcustomerdetailscasing.customerNumber = '';
-                      firstpage.zeroto100 = 0;
-                      firstpage.oneto200 = 0;
-                      firstpage.twoto300 = 0;
-                      firstpage.threeto400 = 0;
-                      firstpage.fourto500 = 0;
-                      firstpage.fiveto600 = 0;
-                      firstpage.sixto700 = 0;
-                      firstpage.sevento800 = 0;
-                      firstpage.eightto900 = 0;
-                      firstpage.nineto1000 = 0;
-                      firstpage.tento1100 = 0;
-                      firstpage.elevento1200 = 0;
-                      firstpage.twelveto1300 = 0;
-                      firstpage.thirteento1400 = 0;
-                      firstpage.fourteento1500 = 0;
-                      firstpage.fifteento1600 = 0;
-                      Navigator.pushReplacement(context,
-                          MaterialPageRoute(builder: (context) => firstpage()));
-                    },
-                    label: Text('New Bill')),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: FloatingActionButton.extended(
+                      onPressed: () {
+                        editcustomerdetailscasing.customerName = '';
+                        editcustomerdetailscasing.customerNumber = '';
+                        firstpage.zeroto100 = 0;
+                        firstpage.oneto200 = 0;
+                        firstpage.twoto300 = 0;
+                        firstpage.threeto400 = 0;
+                        firstpage.fourto500 = 0;
+                        firstpage.fiveto600 = 0;
+                        firstpage.sixto700 = 0;
+                        firstpage.sevento800 = 0;
+                        firstpage.eightto900 = 0;
+                        firstpage.nineto1000 = 0;
+                        firstpage.tento1100 = 0;
+                        firstpage.elevento1200 = 0;
+                        firstpage.twelveto1300 = 0;
+                        firstpage.thirteento1400 = 0;
+                        firstpage.fourteento1500 = 0;
+                        firstpage.fifteento1600 = 0;
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => firstpage()));
+                      },
+                      label: Text('New Bill')),
+                ),
               ),
             ],
           ),

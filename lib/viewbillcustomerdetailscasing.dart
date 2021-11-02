@@ -1,7 +1,5 @@
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/src/widgets/navigation_toolbar.dart';
 import 'package:sanjay/Casing.dart';
 import 'package:sanjay/editcustomerdetailscasing.dart';
 import 'package:sanjay/feetscustomercasingbill.dart';
@@ -318,57 +316,73 @@ class viewbillcustomerdetailscasing extends StatelessWidget {
                 '\nTotal : ' + "${totalwithout + 4000 + casing.casingprice}",
                 style: TextStyle(fontSize: 18, color: Colors.red),
               ),
-              FloatingActionButton.extended(
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => feetscustomercasingbill()));
-                  },
-                  label: Text('Edit Feet prices')),
-              FloatingActionButton.extended(
-                  onPressed: () {
-                    Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => casing()));
-                  },
-                  label: Text('Edit Casing details')),
-              FloatingActionButton.extended(
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => editcustomerdetailscasing()));
-                  },
-                  label: Text('Edit Customer Details')),
-              FloatingActionButton.extended(
-                  onPressed: () {
-                    _generatebill();
-                  },
-                  label: Text('Save and Open')),
-              FloatingActionButton.extended(
-                  onPressed: () {
-                    editcustomerdetailscasing.customerName = '';
-                    editcustomerdetailscasing.customerNumber = '';
-                    firstpage.zeroto100 = 0;
-                    firstpage.oneto200 = 0;
-                    firstpage.twoto300 = 0;
-                    firstpage.threeto400 = 0;
-                    firstpage.fourto500 = 0;
-                    firstpage.fiveto600 = 0;
-                    firstpage.sixto700 = 0;
-                    firstpage.sevento800 = 0;
-                    firstpage.eightto900 = 0;
-                    firstpage.nineto1000 = 0;
-                    firstpage.tento1100 = 0;
-                    firstpage.elevento1200 = 0;
-                    firstpage.twelveto1300 = 0;
-                    firstpage.thirteento1400 = 0;
-                    firstpage.fourteento1500 = 0;
-                    firstpage.fifteento1600 = 0;
-                    Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => firstpage()));
-                  },
-                  label: Text('New Bill')),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FloatingActionButton.extended(
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => feetscustomercasingbill()));
+                    },
+                    label: Text('Edit Feet prices')),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FloatingActionButton.extended(
+                    onPressed: () {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) => casing()));
+                    },
+                    label: Text('Edit Casing details')),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FloatingActionButton.extended(
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  editcustomerdetailscasing()));
+                    },
+                    label: Text('Edit Customer Details')),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FloatingActionButton.extended(
+                    onPressed: () {
+                      _generatebill();
+                    },
+                    label: Text('Save and Open')),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FloatingActionButton.extended(
+                    onPressed: () {
+                      editcustomerdetailscasing.customerName = '';
+                      editcustomerdetailscasing.customerNumber = '';
+                      firstpage.zeroto100 = 0;
+                      firstpage.oneto200 = 0;
+                      firstpage.twoto300 = 0;
+                      firstpage.threeto400 = 0;
+                      firstpage.fourto500 = 0;
+                      firstpage.fiveto600 = 0;
+                      firstpage.sixto700 = 0;
+                      firstpage.sevento800 = 0;
+                      firstpage.eightto900 = 0;
+                      firstpage.nineto1000 = 0;
+                      firstpage.tento1100 = 0;
+                      firstpage.elevento1200 = 0;
+                      firstpage.twelveto1300 = 0;
+                      firstpage.thirteento1400 = 0;
+                      firstpage.fourteento1500 = 0;
+                      firstpage.fifteento1600 = 0;
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) => firstpage()));
+                    },
+                    label: Text('New Bill')),
+              ),
             ],
           ),
         )));

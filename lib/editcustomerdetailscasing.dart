@@ -36,16 +36,20 @@ class editcustomerdetailscasing extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.symmetric(vertical: 20),
-            child: FloatingActionButton.extended(
-              onPressed: () {
-                customerNumber = numberController.text;
-                customerName = nameController.text;
-                Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => viewbillcustomerdetailscasing()));
-              },
-              label: Text('Done'),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: FloatingActionButton.extended(
+                onPressed: () {
+                  customerNumber = numberController.text;
+                  customerName = nameController.text;
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              viewbillcustomerdetailscasing()));
+                },
+                label: Text('Done'),
+              ),
             ),
           )
         ],
