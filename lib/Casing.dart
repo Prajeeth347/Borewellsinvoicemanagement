@@ -113,21 +113,22 @@ class _casingState extends State<casing> {
                   keyboardType: TextInputType.number,
                 ),
               ),
-              SizedBox(
-                height: 16,
-              ),
-              FloatingActionButton.extended(
-                  onPressed: () {
-                    if (casingcontroller.text.isNotEmpty) {
-                      casing.casingprice = int.parse(casingfeetcontroller.text);
-                      casing.casingfeet = int.parse(casingcontroller.text);
-                      Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => viewbillcasing()));
-                    }
-                  },
-                  label: Text('View bill'))
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                child: FloatingActionButton.extended(
+                    onPressed: () {
+                      if (casingcontroller.text.isNotEmpty) {
+                        casing.casingprice =
+                            int.parse(casingfeetcontroller.text);
+                        casing.casingfeet = int.parse(casingcontroller.text);
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => viewbillcasing()));
+                      }
+                    },
+                    label: Text('View bill')),
+              )
             ],
           ),
         ));
